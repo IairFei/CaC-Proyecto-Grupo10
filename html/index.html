@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,16 @@
     <title>C&T Properties</title>
     <link rel="stylesheet" href="../css/styleIndex.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div style="width: 100%;">
-            <a href="#">
-                <img class="primary-icon" src="../images/logo.png"/>
+            <a href="../html/index.html">
+                <img class="primary-icon" src="../images/logo.png" />
             </a>
+        </div>
+        <div class="empresa">
+            <h1>C&T Properties</h1>
         </div>
         <ul class="nav-list" id="naviList">
             <li class="list-item"><a href="./sobreNosotros.html">Sobre nosotros</a></li>
@@ -27,16 +32,36 @@
         </div>
     </nav>
     <section>
-
+        <div class="bienvenida">
+            <div class="texto-container">
+                <h1>Mucho mas que una casa</h1>
+            </div>
+            <div class="texto-container">
+                <p>Elegi el proximo paso de tu vida con nosotros</p>
+            </div>
+            <div class="button1">
+                <button class="button-64" role="button"><a href="./venta.html"></a><span class="text">Venta</a></span></button>
+                <button class="button-64" role="button"><a href="./alquiler.html"></a><span class="text">Alquiler</a></span></button>
+            </div>
+            <div class="button2">
+                <button class="button-64" role="button"><a href="./sobreNosotros.html"></a><span class="text">Sobre nosotros</a></span></button>
+                <button class="button-64" role="button"><a href="./contacto.html"></a><span class="text">Contacto</a></span></button>
+            </div>
+        </div>
     </section>
+
     <footer>
-        <p>
-            <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10" target="_blank">C&T Properties - GitHub Repositorie</a>
+        <p1>
+            <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10" target="_blank">C&T Properties - GitHub
+                Repositorie</a>
             <br>
-            <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10/issues" target="_blank">Aca podes dejarnos tu feedback</a>
-        </p>
+            <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10/issues" target="_blank">Aca podes dejarnos tu
+                feedback</a>
+        </p1>
     </footer>
 </body>
+
+
 <script>
     const toggleButton = document.getElementById('toggleButton');
     const naviList = document.getElementById('naviList');
@@ -45,4 +70,5 @@
         naviList.classList.toggle('active');
     })
 </script>
+
 </html>

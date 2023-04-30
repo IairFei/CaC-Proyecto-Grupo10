@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <meta name="description" content="Sitio web de ventas de inmobiliaria">
+    <meta name="keywords" content="inmobiliaria, ventas, propiedades">
+    <link rel="stylesheet" href="../css/venta.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>LOGO</div>
+            <ul class="navlinks">
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="./venta.html">Venta</a></li>
+                <li><a href="./alquiler.html">Alquiler</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+        <nav class="navbar">
+            <div style="width: 100%;">
+                <a href="#">
+                    <img class="primary-icon" src="../images/logo.png"/>
+                </a>
+            </div>
+            <ul class="nav-list" id="naviList">
+                <li class="list-item"><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li class="list-item"><a href="./venta.html">Venta</a></li>
+                <li class="list-item"><a href="./alquiler.html">Alquiler</a></li>
+                <li class="list-item"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu" id="toggleButton">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+    <main>
+        <section>
+            <h1>Vendé tu propiedad</h1>
+            <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p>
+        </section>
+
+        <section>
+
+            <form action="enviar.php" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="2"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Información de la propiedad</legend>
+                    <div>
+                        <label for="tipo">Tipo de propiedad:</label>
+                        <select id="tipo" name="tipo">
+                          <option value="Casa">Casa</option>
+                          <option value="PH">PH</option>
+                          <option value="Local">Local</option>
+                          <option value="terrenos">Terrenos y lotes</option>
+                          <option value="campos">Campos y chacras</option>
+                          <option value="fondos">Fondos de comercio</option>
+                          <option value="cochera">Cochera</option>
+                          <option value="Oficina">Oficina</option>
+                          <option value="Galpon">Galpon</option>
+                          <option value="Quinta">Quinta</option>
+                          <option value="Otros">Otros</option>
+            </select>
+         </p>
+         <p> <button type="submit">Enviar</button> </p>
+
+         <section id="form-message"></section
+
+
+</body>
+</html>
