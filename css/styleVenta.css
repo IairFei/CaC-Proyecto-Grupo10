@@ -11,6 +11,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   background-color: black;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(46, 23, 190, 0.914) 100%);
 }
 
 h1 {
@@ -88,7 +89,7 @@ p {
   justify-content: center;
   width: 150%;
   display: flex;
-  padding-right: 160px;
+  padding-right: 170px;
 }
 
 
@@ -280,4 +281,27 @@ button:active {
   -webkit-transition: box-shadow 0.2s ease-in;
   -moz-transition: box-shadow 0.2s ease-in;
   transition: box-shadow 0.2s ease-in;
+}
+
+@media all and (max-width: 1200px) {
+    
+  .logo{
+      font-size: 20px;
+  }
+  .nav-list{
+      font-size: 16px;
+  }
+  h1{
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  p{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  button{
+    margin-top: 15px;
+  }
 }

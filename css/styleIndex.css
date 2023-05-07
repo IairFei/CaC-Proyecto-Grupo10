@@ -279,3 +279,15 @@ footer a:hover {
         font-size: 13px;
     }
 }
+@media all and (max-width: 1200px) {
+    
+    .logo{
+        font-size: 20px;
+    }
+    .contact-form h3{
+        font-size: 15px;
+    }
+    .nav-list{
+        font-size: 16px;
+    }
+}

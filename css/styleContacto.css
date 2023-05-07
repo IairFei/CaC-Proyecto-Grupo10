@@ -9,7 +9,7 @@
 
 body {
     background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(46, 23, 190, 0.914) 100%);
     color: #fff;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
@@ -101,7 +101,7 @@ ul {
 
 .contact-form {
     background: rgb(63, 73, 251);
-    background: radial-gradient(circle, rgba(63, 73, 251, 1) 0%, rgba(70, 233, 252, 0.9136904761904762) 100%);
+    background: radial-gradient(circle, rgba(63, 73, 251, 1) 0%, rgba(46, 23, 190, 0.914) 100%);
 }
 
 .contact-form form {
@@ -143,7 +143,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: rgb(36, 109, 36);
+    background: rgb(35, 143, 35);
     color: #fff;
     transition: background-color 0.5s ease-out;
     outline: 0;
@@ -151,7 +151,7 @@ ul {
 
 .buttons {
     background: rgb(34, 193, 195);
-    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 210, 253, 1) 100%);
+    background: linear-gradient(0deg, rgba(46, 23, 190, 0.914) 0%, rgba(46, 23, 190, 0.914) 100%);
 }
 
 .buttons h4,
@@ -203,6 +203,10 @@ a {
     color: skyblue;
     text-decoration: none;
 }
+button a {
+    color: white;
+    text-decoration: none;
+}
 
 footer a:hover {
     color: rgb(253, 188, 105);
@@ -224,4 +228,17 @@ li i {
 
 h3{
     text-align: center;
+}
+
+@media all and (max-width: 1200px) {
+    
+    .logo{
+        font-size: 20px;
+    }
+    .contact-form h3{
+        font-size: 15px;
+    }
+    .nav-list{
+        font-size: 16px;
+    }
 }
