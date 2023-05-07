@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>Ventas</title>
     <meta name="description" content="Sitio web de ventas de inmobiliaria">
     <meta name="keywords" content="inmobiliaria, ventas, propiedades">
-    <link rel="stylesheet" href="../css/styleIndex.css">
+    <link rel="stylesheet" href="../css/styleVenta.css">
 </head>
 
 <body>
@@ -32,57 +33,74 @@
             <div class="menu-line"></div>
         </div>
     </nav>
-    <main>
-        <section>
-            <h1>Vendé tu propiedad</h1>
-            <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p>
-        </section>
 
-        <section>
+    <section>
+        <h1>Vendé tu propiedad</h1>
+        <p>Completá el formulario y nos pondremos en contacto con vos para continuar con el proceso.</p>
+    </section>
 
-            <form action="enviar.php" method="post">
-                <fieldset>
-                    <legend>Información personal</legend>
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre">
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div>
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono">
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="2"></textarea>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Información de la propiedad</legend>
-                    <div>
-                        <label for="tipo">Tipo de propiedad:</label>
-                        <select id="tipo" name="tipo">
-                          <option value="Casa">Casa</option>
-                          <option value="PH">PH</option>
-                          <option value="Local">Local</option>
-                          <option value="terrenos">Terrenos y lotes</option>
-                          <option value="campos">Campos y chacras</option>
-                          <option value="fondos">Fondos de comercio</option>
-                          <option value="cochera">Cochera</option>
-                          <option value="Oficina">Oficina</option>
-                          <option value="Galpon">Galpon</option>
-                          <option value="Quinta">Quinta</option>
-                          <option value="Otros">Otros</option>
-            </select>
-         </p>
-         <p> <button type="submit">Enviar</button> </p>
+    <section>
 
-        <section id="form-message"></section>
-    </main>
+        <form action="enviar.php" method="post">
+            <fieldset>
+                <legend>Información personal</legend>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="2"></textarea>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Información de la propiedad</legend>
+                <div>
+                    <label for="tipo">Tipo de propiedad:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="Casa">Casa</option>
+                        <option value="PH">PH</option>
+                        <option value="Local">Local</option>
+                        <option value="terrenos">Terrenos y lotes</option>
+                        <option value="campos">Campos y chacras</option>
+                        <option value="fondos">Fondos de comercio</option>
+                        <option value="cochera">Cochera</option>
+                        <option value="Oficina">Oficina</option>
+                        <option value="Galpon">Galpon</option>
+                        <option value="Quinta">Quinta</option>
+                        <option value="Otros">Otros</option>
+                </div>
+                </select>
+                </p>
+                <button><a href="../html/index.html">Enviar</a></button>
 
-    
+                <section id="form-message"></section>
+
+                <footer>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="../html/sobreNosotros.html">Sobre nosotros,</a>
+                        </li>
+                        <li>
+                            <a href="../html/index.html">Inicio,</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IairFei/CaC-Proyecto-Grupo10/issues"><i class="fa fa-github"
+                                    aria-hidden="true"></i>Dejanos to feedback</a>
+                        </li>
+                    </ul>
+                    <p class="text-center">Copyright &copy; Grupo 10 Codo a Codo</p>
+                    <p class="text-center">Este proyecto esta hecho unicamente para fines educativos</p>
+                </footer>
+
 </body>
+
 </html>
