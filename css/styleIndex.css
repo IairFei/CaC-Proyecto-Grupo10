@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-image: url(../images/background1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,7 +15,7 @@ body{
     background-size: cover;
 }
 
-.bienvenida{
+.bienvenida {
     border: 3px solid whitesmoke;
     border-radius: 3px;
     padding: 17px;
@@ -27,13 +28,13 @@ body{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1{
+h1 {
     color: white;
     font-size: 40px;
     text-align: center;
 }
 
-p{
+p {
     color: white;
     font-size: 30px;
     text-align: center;
@@ -42,22 +43,22 @@ p{
     margin-bottom: 5px;
 }
 
-.navbar{
+.navbar {
     background-color: rgb(23, 15, 52);
     color: white;
-    display: flex; 
+    display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 20px;
 }
 
-.primary-icon{
+.primary-icon {
     height: 75px;
     margin-left: 30px;
     margin-top: 10px;
 }
 
-.nav-list{
+.nav-list {
     list-style-type: none;
     display: flex;
     justify-content: right;
@@ -66,7 +67,7 @@ p{
     padding-right: 20px;
 }
 
-.nav-list .list-item{
+.nav-list .list-item {
     display: inline-block;
     padding: 20px 10px;
 }
@@ -74,85 +75,86 @@ p{
 .navbar a {
     color: white;
     text-decoration: none;
-    
+
 }
 
 .navbar a:hover {
     color: rgb(253, 188, 105);
     text-decoration: none;
 }
+
 .menu {
     display: none;
-    
+
 }
 
-.menu-line{
+.menu-line {
     width: 20px;
     height: 3px;
     background-color: white;
     margin-bottom: 4px;
-    
+
 }
 
-.article{
+.article {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid #eee;
     margin-bottom: 20px;
-    
+
 }
 
 .button-64 {
-  align-items: center;
-  background-image: linear-gradient(144deg,skyblue, blue 50%,skyblue);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: flex;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 10px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  width: 40%;
-  display: inline-block;
-  box-sizing: border-box;
-  margin: 10px 36px;
+    align-items: center;
+    background-image: linear-gradient(144deg, skyblue, blue 50%, skyblue);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 10px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px 36px;
 }
 
 .button-64:active,
 .button-64:hover {
-  outline: 0;
+    outline: 0;
 }
 
 .button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 15px 20px 15px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-  display: inline-block;
-  padding: center;
-  color: white;
-  
+    background-color: rgb(5, 6, 45);
+    padding: 15px 20px 15px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+    display: inline-block;
+    padding: center;
+    color: white;
+
 }
 
 .button-64:hover span {
-  background: none;
+    background: none;
 }
 
-.empresa{
+.empresa {
     text-align: center;
     width: 100%;
 }
@@ -162,6 +164,7 @@ section i {
     margin: 0 7px;
     text-align: center;
 }
+
 .footer-links {
     list-style-type: none;
     text-align: center;
@@ -169,76 +172,85 @@ section i {
     color: white;
     width: 100%;
     touch-action: manipulation;
-  }
+}
+
 .text-center {
     text-align: center;
-    font-size:15px;
-  }
-  a{
-    color:skyblue;
+    font-size: 15px;
+}
+
+a {
+    color: skyblue;
     text-decoration: none;
-  }
+}
+
 footer a:hover {
     color: rgb(253, 188, 105);
     text-decoration: none;
 }
-  footer {
+
+footer {
     position: fixed;
     width: 100%;
     height: 135px;
     left: 0;
     bottom: 0;
     background-color: black;
-    opacity:0.8;
-  }
+    opacity: 0.8;
+}
 
-  li i{
+li i {
     padding-right: 5px;
-  }
+}
+
 /* Iphone 12 Pro */
-@media all and (max-width: 390px){
-    .navbar{
+@media all and (max-width: 390px) {
+    .navbar {
         flex-direction: column;
         position: absolute;
         width: 100%;
         text-align: center;
     }
+
     .menu {
         display: block;
         position: absolute;
         right: 20px;
         top: 18px;
     }
-    .navbar .container-icon{
+
+    .navbar .container-icon {
         width: 100%;
     }
+
     .nav-list {
         list-style-type: none;
         width: 100%;
         text-align: center;
-        padding-top:10px;
+        padding-top: 10px;
         display: none;
         padding-right: 0px;
-        
+
     }
-    
+
     .nav-list .list-item {
         display: block;
         padding: 10px;
         border-top: 1px solid white;
         width: 100%;
     }
-    
-    .primary-icon{
+
+    .primary-icon {
         height: 35px;
         margin-left: 10px;
         margin-top: 8px;
     }
 
-    .active{
+    .active {
         display: block;
     }
-    .bienvenida{
+
+    .bienvenida {
         width: 355px;
         height: 52%;
         align-content: center;
@@ -246,48 +258,58 @@ footer a:hover {
         margin-top: 93px;
         min-width: 85%;
     }
-    h1{
+
+    h1 {
         font-size: 20px;
         text-align: center;
     }
-    p{
+
+    p {
         font-size: 15px;
     }
+
     .button-64 {
-    margin: 6px 20%;
-    font-size:15px;
-    display: inline-table;
-    max-width: 100%;
-    min-width: 150px;
-    width: 60%;
+        margin: 6px 20%;
+        font-size: 15px;
+        display: inline-table;
+        max-width: 100%;
+        min-width: 150px;
+        width: 60%;
     }
+
     section i {
         font-size: 12px;
         margin: 0 4px;
     }
+
     .footer-links li {
         display: inline;
     }
 
-    footer{
+    footer {
         height: 100px;
     }
-    .footer-links{
+
+    .footer-links {
         padding-left: 20px;
     }
-    .text-center{
+
+    .text-center {
         font-size: 13px;
     }
 }
+
 @media all and (max-width: 1200px) {
-    
-    .logo{
+
+    .logo {
         font-size: 20px;
     }
-    .contact-form h3{
+
+    .contact-form h3 {
         font-size: 15px;
     }
-    .nav-list{
+
+    .nav-list {
         font-size: 16px;
     }
 }
