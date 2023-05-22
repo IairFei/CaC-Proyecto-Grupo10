@@ -48,12 +48,12 @@ function validateForm1() {
     return false;
   }
   
-  if (!/^\d{10}$/.test(phone)) {
+  if (!/^\d{2}-?\d{4}-?\d{4}$/.test(phone)) {
     alert("Por favor, ingrese un número de teléfono válido de 10 dígitos.");
     phoneInput.value = "";
     phoneInput.focus();
-    return false;
-  }
+    return false;
+  }
   
   console.log("Nombre:", document.getElementById("nameInput").value);
   console.log("Email:", email);
