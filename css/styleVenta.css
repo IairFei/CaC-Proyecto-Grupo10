@@ -15,10 +15,28 @@ body {
 }
 
 h1 {
-  padding-top: 70px;
+  padding-top: 40px;
   color: white;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
+}
+
+legend {
+  position: relative;
+  left: -100px;
+  animation: slideInLeft 0.5s forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+
+  to {
+    left: 0;
+    opacity: 1;
+  }
 }
 
 p {
@@ -92,6 +110,50 @@ p {
   padding-right: 213px;
 }
 
+form .block {
+  grid-column: 1 / 2;
+}
+
+form input,
+form textarea {
+  width: 50%;
+  padding: 14px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 15px;
+}
+
+#emailInput {
+  margin: 18px;
+}
+
+input:focus {
+  border-style: groove;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(15, 15, 201, 1) 35%, rgba(46, 23, 190, 0.914) 100%);
+}
+
+.formulario {
+  display: flex;
+  height: 400px;
+}
+
+form .left {
+  width: 100%;
+  flex: 1;
+  margin-left: 245px;
+}
+
+form .right {
+  width: 100%;
+  margin-left: 350px;
+}
+
+.a-llenar{
+  padding-top: 15px;
+}
 
 #form-message {
   margin-top: 20px;
@@ -114,7 +176,7 @@ p {
 input:invalid,
 textarea:invalid,
 select:invalid {
-  border-color: #ff0000;
+  border-color: #ccc
 }
 
 input:invalid:focus,
@@ -126,49 +188,20 @@ select:invalid:focus {
 input:valid,
 textarea:valid,
 select:valid {
-  border-color: #ccc;
+  border-color: #00ff00;
+  margin: -3px;
 }
 
 input:valid:focus,
 textarea:valid:focus,
 select:valid:focus {
-  outline-color: #007bff;
+  outline-color: #6bbfc1
 }
 
-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
 
-fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 20px;
-  font-size: larger;
-  text-align: center;
-}
-
-fieldset form {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-}
-
-fieldset form:last-of-type {
-  margin-right: 0;
-}
-
-div {
-  padding-top: 5px;
+legend {
+  font-size: 20px;
+  margin: 20px;
 }
 
 .footer-links {
@@ -207,15 +240,17 @@ footer {
 
 li i {
   padding-right: 5px;
+  padding-top: 20px;
 }
 
 button {
-  margin-top: 40px;
-  position: relative;
-  padding: 10px 20px;
+  margin-top: 435px;
+  margin-left: 45%;
+  position: absolute;
+  padding: 20px 70px;
   border-radius: 7px;
-  border: 1px solid rgb(61, 106, 255);
-  font-size: 14px;
+  border: 1px solid rgb(5, 255, 126);
+  font-size: 15px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
@@ -229,8 +264,8 @@ button {
 }
 
 button:hover {
-  background: rgb(61, 106, 255);
-  box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+  background: rgb(0, 176, 44);
+  box-shadow: 0 0 30px 5px rgba(0, 199, 113, 0.815);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
@@ -294,7 +329,7 @@ button:active {
   }
 
   h1 {
-    padding-top: 30px;
+    padding-top: 25px;
     font-size: 20px;
     padding-bottom: 10px;
     text-align: center;
@@ -305,7 +340,115 @@ button:active {
     padding-bottom: 10px;
   }
 
-  button {
-    margin-top: 15px;
+}
+
+label {
+  font-size: 15px;
+  margin: 30px;
+}
+
+select {
+  width: 250px;
+  font-size: 15px;
+  border: 5px;
+  border-radius: 5px;
+  appearance: none;
+  background-color: #fff;
+  background-image: none;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all .3s ease-in-out;
+}
+
+select option {
+  padding: 20px;
+  font-size: 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  font-size: 15px;
+}
+
+select:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+  background-color: #f9f9f9;
+  box-shadow: 5px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+select option:checked {
+  background: #6bbfc1;
+  color: #fff;
+}
+
+#phoneInput {
+  margin: -3px;
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  width: 50%;
+}
+
+
+.phoneDigit {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 20px;
+  margin: 0 5px;
+}
+
+.checkbox-container {
+  position: relative;
+}
+
+.checkbox-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid gray;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.checkbox-label:hover {
+  background-color: lightgray;
+}
+
+.checkbox-label input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-label.checked {
+  animation: backgroundAnimation 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: transparent;
   }
+
+  100% {
+    background-color: green;
+  }
+}
+
+#map canvas {
+  width: 5%;
+  height: 400px !important;
+}
+
+#map {
+  margin-top: 13px;
+  width: 77%;
+  height: 230px;
 }

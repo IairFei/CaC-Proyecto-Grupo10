@@ -307,3 +307,27 @@ section .imagenes {
         margin-bottom: 0;
     }
 }
+.shadow-drop-top-bottom{
+    animation:shadow-drop-top-bottom 1s linear both;
+    animation-iteration-count:infinite
+}
+
+@keyframes shadow-drop-top-bottom{
+    0%{box-shadow:0 0 0 0 transparent,0 0 0 0 transparent}100%{box-shadow:0 -12px 20px -12px rgba(18, 185, 0, 0.9),0 12px 20px -12px rgba(3, 231, 3, 0.845)}
+}
+
+
+.tracking-in-expand{
+    animation:tracking-in-expand 4s linear both;
+    animation-iteration-count:infinite;
+    
+}
+
+@keyframes tracking-in-expand{
+    0%{letter-spacing:-.2em;opacity:0}
+    40%{opacity:.6}100%{opacity:1}
+}
+
+.mapa{
+    text-align: center;
+}
